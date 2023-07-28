@@ -32,10 +32,12 @@ export default async function getAllFilesFrontMatter(dir: string) {
     // 파일의 소스를 읽어온다.
     const source = fs.readFileSync(f, 'utf8')
     const {data: frontmatter} = matter(source)
-    if (frontmatter.draft !== true) {
+
+    if (!frontmatter.draft) {
       frontMatterList.push({
         ...frontmatter,
         slug: formatSlug(fileName),
+        summary: frontmatter.summary ? frontmatter.summary : '',
         date: frontmatter.date ? new Date(frontmatter.date).toISOString(): null,
       })
     }
