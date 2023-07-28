@@ -24,7 +24,6 @@ draft: false
 ![안드로이드가상디바이스 선택화면](images/0214/1.png)
 
 ## mitmproxy 사용해보기
-​​
 
 ```
 # 설치
