@@ -7,7 +7,7 @@ import Tag from "@/components/Tag";
 
 
 async function getData() {
-  const frontmatterList = await getAllFilesFrontMatter('posts');
+  const frontmatterList = await getAllFilesFrontMatter('post');
   return {
     posts:frontmatterList
   }
