@@ -5,9 +5,9 @@ import ArticleList from "@/components/ArticleList";
 
 
 async function getData() {
-    const frontmatterList = await getAllFilesFrontMatter('post');
+    const allPosts = await getAllFilesFrontMatter('post');
     return {
-        posts:frontmatterList
+        posts:allPosts
     }
 }
 

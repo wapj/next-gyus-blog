@@ -40,7 +40,7 @@ module.exports = {
 }
 ```
 
-### 클릭수를 추적하고 싶으면?? <OutboundLink> 컴포넌트를 쓰자
+### 클릭수를 추적하고 싶으면?? OutboundLink 컴포넌트를 쓰자
 
 요렇게 쓰면 된다고 함
 

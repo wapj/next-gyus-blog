@@ -13,13 +13,13 @@ draft: false
 
 > gatsby-transformer-remark 는 미리 설치를 해둔 상태여야한다.
 
-```shell
+```
 npm install --save gatsby-remark-prismjs prismjs
 ```
 
 ### gatsby-config.js 설정
 
-```javascript
+```
 plugins: [
   {
     resolve: `gatsby-transformer-remark`,
@@ -48,7 +48,7 @@ PrismJS 는 여러가지 테마가 있는데...
 
 테마를 로딩 할라면 `gatsby-browser.js` 에 설정 해줘야 한다.
 
-```javascript
+```
 // gatsby-browser.js
 require("prismjs/themes/prism-solarizedlight.css")
 ```
@@ -57,7 +57,6 @@ require("prismjs/themes/prism-solarizedlight.css")
 
 `gatsby-config.js` 에 아래와 같이 설정해준다.
 
-언어설정은 \`\`\`{language} 형태로 적어준다.
 
 ````
 ```javascript
