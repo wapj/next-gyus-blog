@@ -11,7 +11,7 @@ export default function ArticleList({posts, type = "blog"}: {posts:any[], type?:
           <article key={slug} className="relative group">
             <div className="relative">
               <h3 className="text-base font-semibold tracking-tight text-slate-900 dark:text-slate-200 pt-8 lg:pt-0">
-                {title}
+                <Link href={`/${type}/${slug}`}>{title}</Link>
               </h3>
               {date.split("T")[0]}
               {summary && (
@@ -22,15 +22,9 @@ export default function ArticleList({posts, type = "blog"}: {posts:any[], type?:
               )}
               <br />
               {tags && tags.map((tag: string) => (
-                <Tag tag={tag} />
+                <Tag tag={tag}/>
               ))}
             </div>
-            <Link href={`/${type}/${slug}`} className="flex items-center text-sm text-sky-500 font-medium">
-                <span className="relative">
-                  Read more<span className="sr-only">, {title}</span>
-                </span>
-              <RightArrow />
-            </Link>
           </article>
         ))}
       </div>

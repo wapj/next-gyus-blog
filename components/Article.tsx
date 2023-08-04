@@ -1,6 +1,14 @@
 import {format, parseISO} from "date-fns";
 import {MDXLayoutRenderer} from "pliny/mdx-components";
 import {Diary, Post} from "contentlayer/generated";
+import IFrame from "@/components/IFrame";
+import {MDXComponents} from "mdx/types";
+
+
+export const components: MDXComponents = {
+  IFrame
+}
+
 
 export default function Article({post}: {post:Post|Diary}) {
   return (
@@ -23,7 +31,7 @@ export default function Article({post}: {post:Post|Diary}) {
           뒤로</a>
         </div>
       </div>
-      <MDXLayoutRenderer code={post.body.code} />
+      <MDXLayoutRenderer code={post.body.code} components={components} />
     </article>
   )
 }

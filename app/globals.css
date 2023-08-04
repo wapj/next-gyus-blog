@@ -39,21 +39,21 @@ h2 {
 }
 
 a {
-  color: #345d82;
-  @apply underline
+  color: #3d92d7;
+  @apply no-underline
 }
 
 a:active {
-  color: #0690f8;
+  color: #a4d2ff;
 }
 
 a:visited {
-  color: gray;
+  color: #285981;
 }
 
 
 a:hover {
-  @apply no-underline
+  @apply underline
 }
 a:focus {}
 

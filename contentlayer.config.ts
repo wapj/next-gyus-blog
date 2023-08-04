@@ -18,7 +18,7 @@ export const Post = defineDocumentType(() => ({
     published: {type: 'boolean'}
   },
   computedFields: {
-    url: {type: 'string', resolve: (post) => `/posts/${post._raw.flattenedPath}`},
+    url: {type: 'string', resolve: (post) => `/blog/${post._raw.flattenedPath}`},
     slug: {
       type: "string",
       resolve: (doc) => doc._raw.flattenedPath.replace(/^.+?(\/)/, "")
@@ -39,7 +39,7 @@ export const Diary = defineDocumentType(() => ({
     published: {type: 'boolean'}
   },
   computedFields: {
-    url: {type: 'string', resolve: (post) => `/posts/${post._raw.flattenedPath}`},
+    url: {type: 'string', resolve: (post) => `/diary/${post._raw.flattenedPath}`},
     slug: {
       type: "string",
       resolve: (doc) => doc._raw.flattenedPath.replace(/^.+?(\/)/, "")
