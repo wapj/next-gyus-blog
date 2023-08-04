@@ -3,9 +3,9 @@ import Link from "next/link";
 import RightArrow from "@/components/icons/RightArrow";
 import React from "react";
 
-export default function ArticleList({posts}: {posts:any[]}) {
+export default function ArticleList({posts, type = "blog"}: {posts:any[], type?: string}) {
   return (
-    <main className={"max-w-screen-lg px-4 py-3 mx-auto"}>
+    <main className={"max-w-screen-md px-4 py-3 mx-auto"}>
       <div className={"mt-5 space-y-8"}>
         {posts.map(({title, slug, date, summary, tags}: any) => (
           <article key={slug} className="relative group">
@@ -25,7 +25,7 @@ export default function ArticleList({posts}: {posts:any[]}) {
                 <Tag tag={tag} />
               ))}
             </div>
-            <Link href={`/blog/${slug}`} className="flex items-center text-sm text-sky-500 font-medium">
+            <Link href={`/${type}/${slug}`} className="flex items-center text-sm text-sky-500 font-medium">
                 <span className="relative">
                   Read more<span className="sr-only">, {title}</span>
                 </span>

@@ -1,41 +1,30 @@
-import getAllFilesFrontMatter, {getFileBySlug} from "@/libs/mdx";
-import {MDXLayoutRenderer} from "@/components/MDXComponents";
-import {DEFAULT_LAYOUT} from "@/libs/constants";
+import { format, parseISO } from 'date-fns'
+import { allPosts } from 'contentlayer/generated'
+import { MDXLayoutRenderer } from 'pliny/mdx-components'
+import {Arima} from "next/dist/compiled/@next/font/dist/google";
+import Article from "@/components/Article";
 
-async function getData({params}: {params: {slug:string[]}}) {
-  const allPosts= await getAllFilesFrontMatter('post');
-  const postIndex : number = allPosts.findIndex((post: any) => post.slug === params.slug.join("/"))
-  const prev = allPosts[postIndex - 1] || null;
-  const next = allPosts[postIndex + 1] || null;
-  const post = await getFileBySlug('post', params.slug.join("/"))
-  return {post, prev, next}
+
+export const generateMetadata = ({ params }: { params: { slug: string[] } }) => {
+  const slug = "blog/" + decodeURI(params.slug.join('/'))
+  const post = allPosts.find((post) => post._raw.flattenedPath === slug)
+  if (!post) throw new Error(`Post not found for slug: ${slug}`)
+  return { title: post.title }
 }
 
 
-// TOOD https://www.npmjs.com/package/@next/mdx next의 MDX 지원을 사용하자.
+const PostLayout = ({ params }: { params: { slug: string[] } }) => {
+  const slug = "blog/" + decodeURI(params.slug.join('/'))
+  console.log(">>>>>>>>");
+  console.log(slug);
+  const post = allPosts.find((post) => {console.log(">>> : ", post._raw.flattenedPath, slug); return post._raw.flattenedPath === slug})
+  if (!post) throw new Error(`Post not found for slug: ${slug}`)
 
-export default async function Page({params}: {params: {slug:string[]}}) {
-  const {post, prev, next} = await getData({params})
-  const { mdxSource, toc, frontMatter }: { mdxSource: string, toc: any[], frontMatter: any } = post
   return (
     <>
-      {frontMatter.draft !== true ? (
-        <div>
-          <MDXLayoutRenderer
-            layout={frontMatter.layout || DEFAULT_LAYOUT}
-            toc={toc}
-            code={mdxSource}
-            frontMatter={frontMatter}
-            prev={prev}
-            next={next}
-          />
-        </div>
-      ): (
-        <div>
-          🚧 공사중
-        </div>
-      )}
+    <Article post={post} />
     </>
   )
-
 }
+
+export default PostLayout

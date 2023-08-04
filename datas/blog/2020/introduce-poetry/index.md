@@ -408,8 +408,7 @@ beautifulsoup4 (4.9.1)
 `pyproject.toml` 에 설정된 의존성들에 대한 lock 파일을 생성합니다. (설치X)
 
 ### export
-
-export 명령어는 lock 파일을 사용해서 다른 의존성 포맷으로 변경할 수 있습니다.
+`export` 명령어는 lock 파일을 사용해서 다른 의존성 포맷으로 변경할 수 있습니다.
 
 ```
 poetry export -f requirements.txt > requirements.txt

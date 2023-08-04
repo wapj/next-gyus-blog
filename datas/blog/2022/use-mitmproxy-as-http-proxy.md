@@ -88,7 +88,7 @@ hashed_name=`openssl x509 -inform PEM -subject_hash_old -in mitmproxy-ca-cert.ce
 
 1. AVD의 리스트를 확인하자 : emulator -list-avds (없으면 AVD 매니저에서 만들어야함)
 
-2. 인증서를 복사할 AVD를 시작하자: emulator -avd <avd_name> -writable-system (-show-kernel 커널로그 보기)
+2. 인증서를 복사할 AVD를 시작하자: emulator -avd \<avd_name> -writable-system (-show-kernel 커널로그 보기)
 
 3. abd를 root계정으로 재시작 : adb root
 
@@ -100,9 +100,9 @@ hashed_name=`openssl x509 -inform PEM -subject_hash_old -in mitmproxy-ca-cert.ce
 
 7. adb리마운트 : adb remount
 
-8. 2단계에서 만든 인증서를 카피하자: adb push <인증서경로> /system/etc/security/cacerts
+8. 2단계에서 만든 인증서를 카피하자: adb push \<인증서경로> /system/etc/security/cacerts
 
-9. 인증서 권한 설정: adb shell chmod 664 /system/etc/security/cacerts/<인증서파일명>
+9. 인증서 권한 설정: adb shell chmod 664 /system/etc/security/cacerts/\<인증서파일명>
 
 10. 디바이스 재시작: adb reboot
 

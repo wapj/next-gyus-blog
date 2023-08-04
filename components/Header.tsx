@@ -5,22 +5,22 @@ import React from "react";
 export function NavItems() {
   return (
     <>
-      <li>
+      <li className={"list-none"}>
         <Link href="/blog" className="hover:text-sky-500">
           Dev
         </Link>
       </li>
-      <li>
+      <li className={"list-none"}>
         <Link href="/diary" className="hover:text-sky-500">
           Diary
         </Link>
       </li>
-      <li>
+      <li className={"list-none"}>
         <Link href="/tags" className="hover:text-sky-500">
           Tags
         </Link>
       </li>
-      <li>
+      <li className={"list-none"}>
         <Link href="/about" className="hover:text-sky-500">
           About
         </Link>
@@ -33,7 +33,7 @@ export default function Header() {
   return (
     <>
       <nav className="bg-white">
-        <div className="max-w-screen-lg px-4 py-3 mx-auto">
+        <div className="max-w-screen-md px-4 py-3 mx-auto">
           <div className="flex items-center">
             <a href="https://blog.gyus.me" className="flex items-center">
               <Image src="/gyus-logo.png" alt="gyus log Logo" width={100} height={24} priority/>
@@ -43,9 +43,9 @@ export default function Header() {
         </div>
       </nav>
       <nav className="bg-gray-50">
-        <div className="max-w-screen-lg px-4 py-3 mx-auto">
+        <div className="max-w-screen-md px-4 py-3 mx-auto">
           <div className="flex items-center">
-            <ul className="flex flex-row font-medium mt-0 mr-6 space-x-8 text-sm">
+            <ul className="flex flex-row font-medium mt-4 mr-6 space-x-8 text-sm">
               <NavItems/>
             </ul>
           </div>

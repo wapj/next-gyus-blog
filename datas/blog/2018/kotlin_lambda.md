@@ -223,26 +223,26 @@ operator fun Point.plus(other: Point): Point {
 
 오버로딩 가능한 산술 연산자 
 
-| 식  | 함수 이름  |
-|:-:|:-:|
-| a * b | times |
-| a / b | div |
-| a % b | rem |
-| a + b | plus |
-| a - b | minus |
-| a += b | plusAssign |
-| -a | unaryMinus |
-| +a | unaryPlus |
-| !a | not |
-| ++a, a++ | inc |
-| --a, a-- | dec |
-| a == b | equals |
-| a < b, a > b, a <= b, a >= b | compareTo |
-| arr[1] | get |
-| arr[1] = 'a' | set |
-| .. | rangeTo |
-| for a in arr | iterator |
-| val (x, y) = p | component |
+|               식                | 함수 이름  |
+|:------------------------------:|:-:|
+|             a * b              | times |
+|             a / b              | div |
+|             a % b              | rem |
+|             a + b              | plus |
+|             a - b              | minus |
+|             a += b             | plusAssign |
+|               -a               | unaryMinus |
+|               +a               | unaryPlus |
+|               !a               | not |
+|            ++a, a++            | inc |
+|            --a, a--            | dec |
+|             a == b             | equals |
+| a \< b, a > b, a \<= b, a >= b | compareTo |
+|             arr[1]             | get |
+|        arr[1] = 'a'            | set |
+|               ..               | rangeTo |
+|          for a in arr          | iterator |
+|         val (x, y) = p         | component |
 
 * `a == b` -> `a?.equals(b) ? : (b == null)`
 * equals는 operator 가 아닌 override 키워드를 앞에 붙인다.
@@ -260,15 +260,15 @@ class Point(val x: Int, val y: Int) {
 
 코틀린은 비트연산자를 지원하지 않음
 
-|자바 | 코틀린| 
-|:-:|:-:|
-|<< | shl|
-| >> | shr|
-| >>> | ushr|
-|&| and|
-|\| | or|
-|^| xor|
-|~| inv| 
+|  자바  | 코틀린| 
+|:----:|:-:|
+| \<\< | shl|
+|  >>  | shr|
+| >>>  | ushr|
+|  &   | and|
+|  \|  | or|
+|  ^   | xor|
+|  ~   | inv| 
 
 ### 위임 프로퍼티 (delegated property)
 

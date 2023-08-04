@@ -154,7 +154,7 @@ console.log(myMap);
 ## [추가] enum을 사용하면 tree shaking 이 안된다고 한다.
 왜 안되는지는 아래 링크를 참고하자.
 
-[<TypeScript enum을 사용하지 않는 게 좋은 이유>](https://engineering.linecorp.com/ko/blog/typescript-enum-tree-shaking/)
+[\<TypeScript enum을 사용하지 않는 게 좋은 이유>](https://engineering.linecorp.com/ko/blog/typescript-enum-tree-shaking/)
 
 위 링크에서는 enum대신 Union Type 을 쓰는게 좋다고한다.
 

@@ -1,21 +1,13 @@
-import '../globals.css'
-import React from "react";
-import getAllFilesFrontMatter from "@/libs/mdx";
+import {compareDesc} from 'date-fns'
+import {allDiaries} from 'contentlayer/generated'
 import ArticleList from "@/components/ArticleList";
 
 
-async function getData() {
-  const frontmatterList = await getAllFilesFrontMatter('diary');
-  return {
-    posts:frontmatterList
-  }
-}
-
 export default async function Diary() {
-  const {posts} = await getData();
+  const posts = allDiaries.sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)))
   return (
     <>
-      <ArticleList posts={posts} />
+      <ArticleList posts={posts} type={"diary"} />
     </>
   )
 }
