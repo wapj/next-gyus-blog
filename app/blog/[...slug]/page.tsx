@@ -16,14 +16,14 @@ export const generateMetadata = ({ params }: { params: { slug: string[] } }) => 
       siteName: siteMetadata.title,
       locale: 'ko_KR',
       type: 'article',
-      image: img,
+      images: [img],
       url: './',
     },
     twitter: {
       card: 'summary_large_image',
       title: post.title,
       description: post.summary,
-      image: img,
+      images: [img],
     },
   }
 }
