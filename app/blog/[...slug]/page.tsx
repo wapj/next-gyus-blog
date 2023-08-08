@@ -7,20 +7,23 @@ export const generateMetadata = ({ params }: { params: { slug: string[] } }) => 
   const slug = "blog/" + decodeURI(params.slug.join('/'))
   const post = allPosts.find((post) => post._raw.flattenedPath === slug)
   if (!post) throw new Error(`Post not found for slug: ${slug}`)
+  const img = post.featured ? post.featured : siteMetadata.banner;
   return { title: post.title,
     description: post._raw,
     openGraph: {
       title: post.title,
       description: post.summary,
       siteName: siteMetadata.title,
-      locale: 'en_US',
+      locale: 'ko_KR',
       type: 'article',
+      image: img,
       url: './',
     },
     twitter: {
       card: 'summary_large_image',
       title: post.title,
       description: post.summary,
+      image: img,
     },
   }
 }

@@ -3,12 +3,12 @@ title: "역류성 식도염 걸린 이야기"
 date: "2021-02-28"
 category: "diary"
 published: true
-featured: /images/2021/reflux.jpg
+featured: /images/2021/reflux.png
 ---
 
 ## 목에 무언가 걸린 느낌?!
 
-![/images/2021/reflux.jpg](/images/2021/reflux.jpg)
+![/images/2021/reflux.jpg](/images/2021/reflux.png)
 
 지금 두달정도 커피를 거의 안마시고 있다. 왜냐하면 목에 무언가 걸린 느낌 때문이다. 목에 이물감이 있다는 표현을 쓰는데, 정말로 하루종일 목에 뭔가 걸린 느낌이고, 뭔가 먹고 있을 때만 괜찮아져서 계속 먹을 것을 찾게 된다.
 

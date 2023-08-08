@@ -3,7 +3,7 @@ title: "파이썬 창시자 귀도 반 로썸에 대하여"
 date: "2020-10-18"
 category: "dev"
 draft: false
-featured: images/guido-headshot-2019.jpg
+featured: /images/2020/guido-headshot-2019.jpg
 ---
 
 개발일을 하면서 참 놀라운 것은 레전드급 개발자들이 모두 현역이거나 살아있다는 것인데요. 파이썬을 사용하는 사람이라면, 파이썬을 만든 사람인 귀도 반 로썸이라는 인물에 대해서 들어본적이 여러번 있을 것입니다. 이번 글에서는 파이썬을 만든 레전드급 개발자인 귀도 반 로썸에 대해서 알아보도록 하겠습니다.

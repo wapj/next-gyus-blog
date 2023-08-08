@@ -7,6 +7,7 @@ export default {
   github: "https://github.com/wapj",
   twitter: "https://twitter.com/wapj2000",
   linkedin: "https://www.linkedin.com/in/seung-kyoo-park-045a7263/",
+  banner: "/images/twitter-card.png",
   analytics: {
     google: "384773432"
   }

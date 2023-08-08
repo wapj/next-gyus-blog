@@ -16,7 +16,8 @@ export const Post = defineDocumentType(() => ({
     tags: { type: 'list', of: {type: 'string'}},
     category: {type: 'string'},
     summary: {type: 'string'},
-    published: {type: 'boolean'}
+    published: {type: 'boolean'},
+    featured: {type: 'string'},
   },
   computedFields: {
     url: {type: 'string', resolve: (post) => `/blog/${post._raw.flattenedPath}`},
@@ -38,7 +39,8 @@ export const Diary = defineDocumentType(() => ({
     tags: { type: 'list', of: {type: 'string'}},
     category: {type: 'string'},
     summary: {type: 'string'},
-    published: {type: 'boolean'}
+    published: {type: 'boolean'},
+    featured: {type: 'string'},
   },
   computedFields: {
     url: {type: 'string', resolve: (post) => `/diary/${post._raw.flattenedPath}`},
