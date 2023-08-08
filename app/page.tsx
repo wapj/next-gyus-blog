@@ -14,9 +14,6 @@ export default async function Home() {
   return (
     <>
       <main className={"max-w-screen-md px-4 py-3 mx-auto"}>
-        <div className={"rounded-lg border border-black p-5"}>
-          🚧공사중...
-        </div>
         <ArticleList posts={posts} />
       </main>
     </>
