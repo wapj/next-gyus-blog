@@ -1,17 +1,29 @@
-import { format, parseISO } from 'date-fns'
-import { allPosts } from 'contentlayer/generated'
-import { MDXLayoutRenderer } from 'pliny/mdx-components'
-import {Arima} from "next/dist/compiled/@next/font/dist/google";
+import {allPosts} from 'contentlayer/generated'
 import Article from "@/components/Article";
+import siteMetadata from "@/datas/siteMetadata";
 
 
 export const generateMetadata = ({ params }: { params: { slug: string[] } }) => {
   const slug = "blog/" + decodeURI(params.slug.join('/'))
   const post = allPosts.find((post) => post._raw.flattenedPath === slug)
   if (!post) throw new Error(`Post not found for slug: ${slug}`)
-  return { title: post.title }
+  return { title: post.title,
+    description: post._raw,
+    openGraph: {
+      title: post.title,
+      description: post.summary,
+      siteName: siteMetadata.title,
+      locale: 'en_US',
+      type: 'article',
+      url: './',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: post.title,
+      description: post.summary,
+    },
+  }
 }
-
 
 const PostLayout = ({ params }: { params: { slug: string[] } }) => {
   const slug = "blog/" + decodeURI(params.slug.join('/'))

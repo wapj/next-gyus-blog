@@ -3,7 +3,11 @@ import {compareDesc} from 'date-fns'
 import {allPosts} from 'contentlayer/generated'
 import React from "react";
 import ArticleList from "@/components/ArticleList";
+import {Metadata} from "next";
+import {getMetaData} from "@/app/seo";
 
+
+export const metadata: Metadata = getMetaData({title: '승귤입니다'});
 
 export default async function Home() {
   const posts = allPosts.sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)))

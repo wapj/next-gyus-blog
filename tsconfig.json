@@ -23,7 +23,6 @@
     "paths": {
       "@/*": ["./*"],
       "~/*": ["public/*"],
-      "datas": ["./datas/*"],
       "contentlayer/generated": ["./.contentlayer/generated"],
     }
   },

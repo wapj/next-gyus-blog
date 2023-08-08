@@ -15,6 +15,7 @@ export const Post = defineDocumentType(() => ({
     date: { type: 'date', required: true},
     tags: { type: 'list', of: {type: 'string'}},
     category: {type: 'string'},
+    summary: {type: 'string'},
     published: {type: 'boolean'}
   },
   computedFields: {
@@ -36,6 +37,7 @@ export const Diary = defineDocumentType(() => ({
     date: { type: 'date', required: true},
     tags: { type: 'list', of: {type: 'string'}},
     category: {type: 'string'},
+    summary: {type: 'string'},
     published: {type: 'boolean'}
   },
   computedFields: {
