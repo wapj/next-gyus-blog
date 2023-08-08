@@ -34,8 +34,6 @@ export const generateMetadata = ({ params }: { params: { slug: string[] } }) => 
 
 const PostLayout = ({ params }: { params: { slug: string[] } }) => {
   const slug = "diary/" + decodeURI(params.slug.join('/'))
-  console.log(">>>>>>>>");
-  console.log(slug);
   const diary = allDiaries.find((diary) => {console.log(">>> : ", diary._raw.flattenedPath, slug); return diary._raw.flattenedPath === slug})
   if (!diary) throw new Error(`Post not found for slug: ${slug}`)
 
