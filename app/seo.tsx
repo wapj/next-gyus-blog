@@ -26,6 +26,9 @@ export function getMetaData({title, description, image, ...rest}: PageSEOProps) 
       card: 'summary_large_image',
       images: image? [image] :[siteMetadata.banner],
     },
+    alternates: {
+      canonical: './',
+    },
     ...rest,
   }
 }
