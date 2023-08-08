@@ -17,14 +17,14 @@ export function getMetaData({title, description, image, ...rest}: PageSEOProps) 
       description: description || siteMetadata.description,
       url: './',
       siteName: siteMetadata.title,
-      images: image,
+      images: image? [image] :[siteMetadata.banner],
       locale: 'en_US',
       type: 'website',
     },
     twitter: {
       title: `${title} | ${siteMetadata.title}`,
       card: 'summary_large_image',
-      images: image,
+      images: image? [image] :[siteMetadata.banner],
     },
     ...rest,
   }
