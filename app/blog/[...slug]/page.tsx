@@ -1,6 +1,8 @@
 import {allPosts} from 'contentlayer/generated'
 import Article from "@/components/Article";
+import Comment from "@/components/Comment";
 import siteMetadata from "@/datas/siteMetadata";
+
 
 
 export const generateMetadata = ({ params }: { params: { slug: string[] } }) => {
@@ -37,7 +39,11 @@ const PostLayout = ({ params }: { params: { slug: string[] } }) => {
 
   return (
     <>
-    <Article post={post} />
+      <Article post={post} />
+      <div className="mx-auto max-w-screen-md py-8">
+        <Comment />
+      </div>
+
     </>
   )
 }
