@@ -3,7 +3,7 @@ title: "[타입스크립트] enum에 한글사용하기"
 date: "2021-08-17"
 tags: ["TIL", "react", "typescript"]
 category: dev
-featured: "images/til.png"
+featured: "/images/2021/til.png"
 draft: false
 ---
 
@@ -108,7 +108,7 @@ console.log(Category[Category.웹툰]); // 웹툰
 
 > editor > inspections 에서 non ascii 로 검색 후 allow only ASCII names 를 해지해주자.
 
-![typescript_til](images/2021_08_typescript_til.png)
+![typescript_til](/images/2021/2021_08_typescript_til.png)
 
 
 ## 근데 enum을 map으로 만들수도 있지 않을까?

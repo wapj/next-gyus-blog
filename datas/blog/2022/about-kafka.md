@@ -3,37 +3,37 @@ title: "카프카에 대해서 알아보자"
 date: "2022-05-23"
 tags: ["kafka"]
 category: dev
-featured: "images/0523/kafka1.png"
+featured: "/images/2022/0523/kafka1.png"
 draft: false
 ---
 
 
 ## 카프카란?
 
-- 대용량, 대규모 메시지 데이터를 빠르게 처리하도록 개발된 메시징 플랫폼. 
-- 홈페이지에는 고성능 데이터 파이프라인, 스트리밍 분석, 데이터 통합, 미션 크리티컬한 애플리케이션을 위한 분산 이벤트 스트리밍 플랫폼으로 소개하고 있음. 
-- 기술에 보수적인 제조사, 통신사, 은행, 보험사 중 가장 큰 곳들은 대부분 사용한다고 함. 
+- 대용량, 대규모 메시지 데이터를 빠르게 처리하도록 개발된 메시징 플랫폼.
+- 홈페이지에는 고성능 데이터 파이프라인, 스트리밍 분석, 데이터 통합, 미션 크리티컬한 애플리케이션을 위한 분산 이벤트 스트리밍 플랫폼으로 소개하고 있음.
+- 기술에 보수적인 제조사, 통신사, 은행, 보험사 중 가장 큰 곳들은 대부분 사용한다고 함.
 
 자세한 것은 [The Log](https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying)라는 글을 읽어보면 좋다. 
 
 
-## 카프카 설치 
+## 카프카 설치
 
-- [https://kafka.apache.org/downloads](https://kafka.apache.org/downloads) 에서 바이너리 버전을 받아서 압축 풀기. $HOME 디렉토리에 압축을 풀었다고 가정함   
+- [https://kafka.apache.org/downloads](https://kafka.apache.org/downloads)에서 바이너리 버전을 받아서 압축 풀기. $HOME 디렉토리에 압축을 풀었다고 가정함  
 
 - 나는 대충 최신 버전을 받았음 어차피 바이너리라...
-- 직접다운로드 링크는 여기 [**https://dlcdn.apache.org/kafka/3.1.1/kafka\_2.13-3.1.1.tgz**](https://dlcdn.apache.org/kafka/3.1.1/kafka_2.13-3.1.1.tgz)
+- 직접다운로드 링크는 여기[**https://dlcdn.apache.org/kafka/3.1.1/kafka\_2.13-3.1.1.tgz**](https://dlcdn.apache.org/kafka/3.1.1/kafka_2.13-3.1.1.tgz)
 
 
-![](./images/0523/kafka1.png)  
+![kafka-intall](/images/2022/0523/kafka1.png)  
 
 
 
-### 주키퍼 시작하기 
+### 주키퍼 시작하기
 
 카프카는 주키퍼에 의존성이 있음. 그러므로 주키퍼를 먼저 시작시켜줘야함.
 
-다음 스크립트로 실행. 
+다음 스크립트로 실행.
 
 ```
 ~/kafka_2.13-3.1.1/bin/zookeeper-server-start.sh ~/kafka_2.13-3.1.1/config/zookeeper.properties
@@ -47,7 +47,7 @@ draft: false
 
 
 
-잘은 모르겠지만, 뭔가 많은 로그가 올라가면서 주키퍼가 기동됨 
+잘은 모르겠지만, 뭔가 많은 로그가 올라가면서 주키퍼가 기동됨
 
 ```
 [2022-05-14 23:36:17,913] INFO   ______                  _                                           (org.apache.zookeeper.server.ZooKeeperServer)
@@ -62,7 +62,7 @@ draft: false
 
 
 
-## 아파치 카프카 시작하기 
+## 아파치 카프카 시작하기
 
 다른 터미널 창에서 다음과 같이 실행
 
@@ -72,7 +72,7 @@ draft: false
 
 
 
-뭔가 많이 뜨면서 에러가 안나면 성공. 포트는 9092 인듯 
+뭔가 많이 뜨면서 에러가 안나면 성공. 포트는 9092 인듯
 
 
 
@@ -96,13 +96,13 @@ draft: false
 
 
 
-### $PATH에 환경변수 설정하기 
+### $PATH에 환경변수 설정하기
 
-`kafka_2.13-3.1.1/bin`  은 자주 사용하게 될 것이니, 귀찮으면 PATH에 등록해도 됨.   
+`kafka_2.13-3.1.1/bin` 은 자주 사용하게 될 것이니, 귀찮으면 PATH에 등록해도 됨.  
 
 
 
-.zshrc 나 .bash\_profile등에 다음과 같이 하면됨. 
+.zshrc 나 .bash\_profile등에 다음과 같이 하면됨.
 
 ```
 PATH="$PATH:~/kafka_2.13-3.1.1/bin"
@@ -114,17 +114,17 @@ PATH="$PATH:~/kafka_2.13-3.1.1/bin"
 
 ### 카프카와 주키퍼의 데이터 저장 디렉터리 변경하기 (옵션)
 
-주키퍼의 경우 : `zookeeper.properties`  의 dataDir 값을 변경하면 원하는 곳으로 데이터 저장 디렉터리를 변경할 수 있다. 
+주키퍼의 경우 :`zookeeper.properties` 의 dataDir 값을 변경하면 원하는 곳으로 데이터 저장 디렉터리를 변경할 수 있다.
 
-카프카의 경우 : `server.properties`   의 log.dirs 를 원하는 디렉터리로 변경하기
+카프카의 경우 :`server.properties`  의 log.dirs 를 원하는 디렉터리로 변경하기
 
 
 
 ### 심볼릭 링크만들기 (옵션)
 
-kafka\_2.13-3.1.1 이렇게 매번 타이핑하기 귀찮으니 `kafka`  로 심볼릭 링크를 만들자. 
+kafka\_2.13-3.1.1 이렇게 매번 타이핑하기 귀찮으니`kafka` 로 심볼릭 링크를 만들자.
 
-이렇게 하면  조금 편하게 카프카 디렉터리로 접근할 수 있다. 
+이렇게 하면 조금 편하게 카프카 디렉터리로 접근할 수 있다.
 
 ```
 ln -s kafka_2.13-3.1.1 kafka
@@ -134,7 +134,7 @@ ln -s kafka_2.13-3.1.1 kafka
 
 
 
-## 토픽 만들고 삭제하기 
+## 토픽 만들고 삭제하기
 
 만들기
 
@@ -162,7 +162,7 @@ alhost:9092
 
 
 
-## 토픽 조회하기 
+## 토픽 조회하기
 
 
 
@@ -179,7 +179,7 @@ andy-test-topic
 
 ## 토픽에 메시지 보내기
 
-키를 지정하지 않고 메세지 보내기 
+키를 지정하지 않고 메세지 보내기
 
 ```
 ./kafka-console-producer.sh --broker-list localhost:9092 --topic andy-tes
@@ -188,7 +188,7 @@ t-topic
 
 
 
-이것 저것 입력후 Ctrl + C 로 빠져나오기 
+이것 저것 입력후 Ctrl + C 로 빠져나오기
 
 ```
 > 안녕하시요.
@@ -200,7 +200,7 @@ t-topic
 
 
 
-키를 지정하려면 다음과 같이 해야함 
+키를 지정하려면 다음과 같이 해야함
 
 
 
@@ -237,11 +237,11 @@ nice to meet you
 
 
 
-## 카프카 테스트 프로젝트 
+## 카프카 테스트 프로젝트
 
 ### gradle 설정
 
-**confluent 저장소 추가 하기** 
+**confluent 저장소 추가 하기**
 
 ```
 repositories {
@@ -254,7 +254,7 @@ repositories {
 
 
 
-카프카 클라이언트 의존성 추가  (스트림즈도 공부할거라 스트림즈도 넣어줌)
+카프카 클라이언트 의존성 추가 (스트림즈도 공부할거라 스트림즈도 넣어줌)
 
 ```
 implementation 'org.codehaus.groovy:groovy-all:3.0.5'
@@ -268,9 +268,9 @@ implementation 'org.slf4j:slf4j-simple:1.7.32'
 
 
 
-Helloworld 클래스 만들기 
+Helloworld 클래스 만들기
 
-me.gyus.demos.kafka 패키지로 만들자. 
+me.gyus.demos.kafka 패키지로 만들자.
 
 
 
@@ -335,6 +335,6 @@ public class ProducerDemo {
 }
 ```
 
-## 참고 
+## 참고
 
 [https://www.sohamkamani.com/install-and-run-kafka-locally/](https://www.sohamkamani.com/install-and-run-kafka-locally/)

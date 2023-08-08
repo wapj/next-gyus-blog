@@ -3,7 +3,7 @@ title: "코틀린 참고 자료들"
 date: 2022-06-04
 tags: ["kotlin"]
 category: dev
-featured: "images/kotlin.png"
+featured: "/images/2022/kotlin.png"
 draft: false
 ---
 

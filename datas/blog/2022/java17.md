@@ -3,7 +3,7 @@ title: "Java17을 쓰면 좋을까?"
 date: "2022-01-25"
 tags: ["TIL", "java"]
 category: dev
-featured: "images/java17.webp"
+featured: "/images/2022/java17.webp"
 draft: false
 ---
 

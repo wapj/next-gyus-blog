@@ -3,7 +3,7 @@ title: "leetcode 78번 부분집합문제"
 date: "2021-09-05"
 tags: ["leetcode", "subsets"]
 category: dev
-featured: "images/2021_09_05.png"
+featured: "/images/2021/2021_09_05.png"
 draft: false
 ---
 
@@ -35,7 +35,7 @@ https://leetcode.com/problems/subsets/
 
 ## 풀이
 
-![images/2021_09_05_01.jpg](images/2021_09_05_01.jpg)
+![images/2021_09_05_01.jpg](/images/2021/2021_09_05_01.jpg)
 
 정답 풀이에도 있는데, cascading 방식으로 풀었다.
 

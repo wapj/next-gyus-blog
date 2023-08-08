@@ -3,7 +3,7 @@ title: "스프링 서버가 뜨는 동안 기다리지 말고, 알림으로 받�
 date: "2022-02-20"
 tags: ["iterm2", "spring", "java"]
 category: dev
-featured: "images/0220/1.jpg"
+featured: "/images/2022/0220/0706.jpg"
 draft: false
 ---
 
@@ -87,9 +87,9 @@ Profiles → Advanced → Triggers → Edit → Triggers → + 버튼 눌러 추
 → Regular Expression : 서버 기동 성공.* , Action : Post Notification, Parameters : 노티시의 메세지, Instant : 체크, Enabled : 체크
 
 
-![iterm2설정 1](images/0220/2.png)
+![iterm2설정 1](/images/2022/0220/2.png)
 
-![iterm2설정 2](images/0220/3.png)
+![iterm2설정 2](/images/2022/0220/3.png)
 
 
 

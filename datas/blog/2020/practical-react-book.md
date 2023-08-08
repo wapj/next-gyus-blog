@@ -3,7 +3,7 @@ title: "실전 리액트 프로그래밍"
 date: "2020-07-06"
 tags: ["react", "javascript"]
 category: "dev"
-featured: images/1.jpg
+featured: /images/2020/0706.jpg
 draft: false
 ---
 

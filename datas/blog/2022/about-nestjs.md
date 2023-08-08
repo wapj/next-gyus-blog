@@ -3,21 +3,21 @@ title: "NestJS에 대해서 알아보자"
 date: "2022-05-09"
 tags: ["NestJS"]
 category: dev
-featured: "images/0509/nestjs_cat.png"
+featured: "/images/2022/0509/nestjs_cat.png"
 draft: false
 ---
 
 
 ## 개요
 
-- NestJS(이하 Nest)는 Node.js에서 돌아가는 서버 사이드 어플리케이션이다. 
-- 타입스크립트를 완벽 지원한다. 
-- 진보적인(progressive) 자바스크립트를 사용한다. 
-    - 진보적인게 무슨뜻인가? 
+- NestJS(이하 Nest)는 Node.js에서 돌아가는 서버 사이드 어플리케이션이다.
+- 타입스크립트를 완벽 지원한다.
+- 진보적인(progressive) 자바스크립트를 사용한다.
+    - 진보적인게 무슨뜻인가?
     - [스택오버플로우](https://stackoverflow.com/questions/67205590/why-nest-js-claims-to-be-progressive#:~:text=According%20to%20a%20Dictionary%20on,js%20world.%22)의 링크에 보면 나와 있지만, 최신 자바스크립트의 기능을 사용한다는 뜻으로 추측한다.
 
-- Express를 기본적으로 사용하며 선택적으로 Fastify를 사용할 수 있다. 
-- Express와 Fastify에 추상화 수준을 제공하지만, 개발자가 직접 API를 호출 할 수있다. 그러므로 서드파티 모듈도 자유롭게 사용할 수 있다. 
+- Express를 기본적으로 사용하며 선택적으로 Fastify를 사용할 수 있다.
+- Express와 Fastify에 추상화 수준을 제공하지만, 개발자가 직접 API를 호출 할 수있다. 그러므로 서드파티 모듈도 자유롭게 사용할 수 있다.
 
 
 ## 철학
@@ -127,7 +127,7 @@ start:dev의 경우는 nodemon을 사용해서 파일이 변경될 때 마다 �
 
 대충 이런거 나옴
 
-![](./images/0509/3.png)  
+![](/images/2022/0509/3.png)  
 
 
 
@@ -141,13 +141,13 @@ npm trends에서 살펴보면 다운로드수는 express가 압도적으로 많�
 
 
 
-![](./images/0509/2.png)  
+![](/images/2022/0509/2.png)  
 
 
 
 다만 nestjs 단독으로만 보면 꾸준하게 사용이 늘어나는 것을 볼 수 있다.
 
-![](./images/0509/1.png)  
+![](/images/2022/0509/1.png)  
 
 
 ### 추가로 읽어보면 좋은 글

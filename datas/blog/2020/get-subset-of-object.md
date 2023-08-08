@@ -3,7 +3,7 @@ title: "[TIL] 자바스크립트의 객체에서 일부만 떼서 다른 객체�
 date: "2020-07-17"
 tags: ["TIL", "javascript", "destructuring"]
 category: dev
-featured: images/featured.png
+featured: /images/2020/get-subset-of-object.png
 draft: false
 ---
 

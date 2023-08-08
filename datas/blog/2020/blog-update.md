@@ -3,7 +3,7 @@ title: 블로그 개선
 date: "2020-05-19"
 tags: ["shell", "blog"]
 category: dev
-featured: images/featured.jpg
+featured: /images/2020/blog-update.jpg
 draft: false
 ---
 

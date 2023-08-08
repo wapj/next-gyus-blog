@@ -3,7 +3,7 @@ title: 윈도우에 파이썬을 설치하는 방법 5가지
 date: "2020-06-22"
 tags: ["python", "python install", "windows"]
 category: dev
-featured: images/featured.jpg
+featured: /images/2020/0622/featured.jpg
 draft: false
 ---
 
@@ -15,19 +15,19 @@ draft: false
 
 [https://www.python.org/](https://www.python.org/)
 
-![images/featured.png](images/featured.png)
+![images/featured.png](/images/2020/0622/featured.png)
 
 다운로드 받은 파일을 클릭해서 설치를 진행해보도록 하자.
-![이미지1](images/img1.png)
+![이미지1](/images/2020/0622/img1.png)
 
 클릭 하면 아래와 같은 창이 뜨게 된다.
 
-![images/2.png](images/2.png)
+![/images/2020/0622/2.png](/images/2020/0622/2.png)
 
 - 여기서 귀찮은 사람은 Install Now 를 선택하여 바로 설치를 하자.
 - 조금 더 알아볼 사람은 아래의 Customize installation 을 눌러서 어떤것이 있는지 살펴보자.
 
-![images/3.png](images/3.png)
+![/images/2020/0622/3.png](/images/2020/0622/3.png)
 
 - Documentation 에 체크를 하면 문서가 함께 설치된다.
 - pip는 파이썬 패키지를 관리하는 프로그램인데 무조건 설치해야한다.
@@ -38,7 +38,7 @@ draft: false
 
 이제 Next를 눌러서 설치를 계속 진행하자.
 
-![images/4.png](images/4.png)
+![/images/2020/0622/4.png](/images/2020/0622/4.png)
 
 - Associate file with Python 은 이전에 설정했던 py launcher 와 같은 내용이다.
 - Create shortcut 은 파이썬 숏컷을 만들것이다라는 것인데, 안해도 크게 관련이 없다.
@@ -48,33 +48,33 @@ draft: false
 
 이제 **install** 을 클릭하면 설치가된다. 머신에 따라 시간이 좀 걸릴 수 있으니 물한잔 마시고 오면 좋을 것 같다.
 
-![images/5.png](images/5.png)
+![/images/2020/0622/5.png](/images/2020/0622/5.png)
 
 close 를 누르면 완료이다.
 
-![images/6.png](images/6.png)
+![/images/2020/0622/6.png](/images/2020/0622/6.png)
 
 명령프롬프트를 켜서 파이썬의 버전을 확인해보자.
 
 `python -V` 를 치고 엔터키를 누르면 `Python 3.8.3` 이라는 메세지가 나오면 잘 설치가 된것이다.
 
-![images/7.png](images/7.png)
+![/images/2020/0622/7.png](/images/2020/0622/7.png)
 
 ## 두번째, 마이크로소프트 스토어 사용하기
 
 마이크로소프트 스토어 앱을 켜고 파이썬으로 검색을 합시다.
 
-![images/8.png](images/8.png)
+![/images/2020/0622/8.png](/images/2020/0622/8.png)
 
 이중에 원하는 것을 골라서 설치하면 된다. 나는 파이썬3.8을 설치할것이다.
 
-![images/9.png](images/9.png)
+![/images/2020/0622/9.png](/images/2020/0622/9.png)
 
 무료 버튼 클릭!
 
 설치가 끝나고 쉘에서 확인을 해보자.
 
-![images/10.png](images/10.png)
+![/images/2020/0622/10.png](/images/2020/0622/10.png)
 
 정말 설치가 쉽게 끝나서 놀랍다!
 
@@ -86,23 +86,23 @@ close 를 누르면 완료이다.
 
 아나콘다 다운로드 페이지로 가서 다운로드 링크를 클릭하자.
 
-![images/11.png](images/11.png)
+![/images/2020/0622/11.png](/images/2020/0622/11.png)
 
 다운로드받은 후 파일을 실행해서 설치하자. 특별한 설정없이 `next` 만 계속 클릭하면 된다.
 
-![images/12.png](images/12.png)
+![/images/2020/0622/12.png](/images/2020/0622/12.png)
 
-![images/13.png](images/13.png)
+![/images/2020/0622/13.png](/images/2020/0622/13.png)
 
-![images/14.png](images/14.png)
+![/images/2020/0622/14.png](/images/2020/0622/14.png)
 
-![images/15.png](images/15.png)
+![/images/2020/0622/15.png](/images/2020/0622/15.png)
 
-![images/16.png](images/16.png)
+![/images/2020/0622/16.png](/images/2020/0622/16.png)
 
-![images/17.png](images/17.png)
+![/images/2020/0622/17.png](/images/2020/0622/17.png)
 
-![images/18.png](images/18.png)
+![/images/2020/0622/18.png](/images/2020/0622/18.png)
 
 설치 완료시까지 시간이 좀 걸리니 잠깐 쉬고 오도록 하자.
 
@@ -110,7 +110,7 @@ close 를 누르면 완료이다.
 
 아나콘다의 경우에는 패스에 파이썬 경로가 포함되지 않기 때문에 아나콘다 파워쉘을 실행해서 확인해야한다.
 
-![images/19.png](images/19.png)
+![/images/2020/0622/19.png](/images/2020/0622/19.png)
 
 아나콘다 파워쉘을 실행시킨후 파이썬이 잘 설치되었는지 확인해보자.
 
@@ -118,13 +118,13 @@ close 를 누르면 완료이다.
 
 또한 `get-command python` 으로 파이썬이 설치된 경로를`확인할 수있는데, 나의 경우에는`C:\Users\wapj\anaconda3\python.exe` 이었다. 파이썬을 좀 더 편하게 사용하고 싶은 경우 패스에 추가해주면 좋다.
 
-![images/20.png](images/20.png)
+![/images/2020/0622/20.png](/images/2020/0622/20.png)
 
 참고로 아나콘다를 설치하면 `ANACONDA NAVIGATOR` 가 함께 설치되는데, 실행해보면 꽤 많은 패키지들이 함께 설치되어 있다.
 
 파이썬 학습에 꽤나 도움될만한 것들이 많이 있으니, 관심있는 사람은 살펴보아도 좋을 것 같다.
 
-![images/21.png](images/21.png)
+![/images/2020/0622/21.png](/images/2020/0622/21.png)
 
 ## 네번째, 패키지 매니저를 사용하여 설치하기
 
@@ -140,11 +140,11 @@ chocolatey는 아래와 같은 요구사항이 있다. 설치가 안된다면 �
 
 설치를 하기위해서는 관리자권한으로 **파워쉘**을 열어야한다.
 
-![images/22.png](images/22.png)
+![/images/2020/0622/22.png](/images/2020/0622/22.png)
 
 윈도우즈의 검색창에서 `POWER SHELL` 이라고 치면 위와 같은 화면이 나오는데, 관리자 권한으로 실행을 클릭하자.
 
-![images/23.png](images/23.png)
+![/images/2020/0622/23.png](/images/2020/0622/23.png)
 
 커맨드 화면이 나오면 아래의 명령어를 붙여넣고 엔터키를 누르자.
 
@@ -154,7 +154,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 
 파워쉘에서 `choco` 라고 명령어 입력시 아래와 같이 나오면 성공이다.
 
-![images/24.png](images/24.png)
+![/images/2020/0622/24.png](/images/2020/0622/24.png)
 
 이제 파이썬을 설치해보자.
 
@@ -164,7 +164,7 @@ choco 로 그냥 `python` 을 검색하면 너무 많은 결과가 나오게 되
 > choco search python3 |Select-String -Pattern Approved
 ```
 
-![images/25.png](images/25.png)
+![/images/2020/0622/25.png](/images/2020/0622/25.png)
 
 그러면 적당한 갯수의 패키지가 보이게된다.
 
@@ -178,9 +178,9 @@ choco 로 그냥 `python` 을 검색하면 너무 많은 결과가 나오게 되
 
 설치시에 이것저것 물어보는데 `a`를 선택하면 전부다 `y`로 처리된다. 귀찮은경우에 사용하자.
 
-![images/26.png](images/26.png)
+![/images/2020/0622/26.png](/images/2020/0622/26.png)
 
-![images/27.png](images/27.png)
+![/images/2020/0622/27.png](/images/2020/0622/27.png)
 
 설치가 다 되었다면, 파이썬이 잘 실행되는지 테스트를 해봐야하는데, 그전에 `refreshenv` 를 실행해서 파이썬의 path를 적용한 환경변수를 현재 파웨쉘터미널에 적용해주어야한다. 그 후에 `python -V` 를 입력시 `Python 3.8.3` 과 같은 메세지가 나오면 잘 설치가 된 것이다.
 
@@ -190,21 +190,21 @@ choco 로 그냥 `python` 을 검색하면 너무 많은 결과가 나오게 되
 
 사용하기가 쉬운 우분투를 한번 받아보도록 하자.
 
-![images/28.png](images/28.png)
+![/images/2020/0622/28.png](/images/2020/0622/28.png)
 
 원하는 버전을 받으면 되는데, 나는 20.04를 받았다. 18.04버전도 문제없이 잘 동작할것이다.
 
-![images/29.png](images/29.png)
+![/images/2020/0622/29.png](/images/2020/0622/29.png)
 
 `무료버튼`을 클릭하면 설치가 된다.
 
-![images/30.png](images/30.png)
+![/images/2020/0622/30.png](/images/2020/0622/30.png)
 
 설치가 완료됐으면 실행을 해보도록 하자.
 
-![images/31.png](images/31.png)
+![/images/2020/0622/31.png](/images/2020/0622/31.png)
 
-![images/32.png](images/32.png)
+![/images/2020/0622/32.png](/images/2020/0622/32.png)
 
 실행하니 위와 같은 에러가 뜨는데, wsl 을 사용할 수있도록 설정을 해야한다고 한다. 파워쉘을 `관리자`모드로 켜고 아래의 명령을 실행해주자.
 
@@ -212,13 +212,13 @@ choco 로 그냥 `python` 을 검색하면 너무 많은 결과가 나오게 되
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 ```
 
-![images/33.png](images/33.png)
+![/images/2020/0622/33.png](/images/2020/0622/33.png)
 
 위의 설정을 하고나서 컴퓨터를 재시작 해주어야한다.
 
 재시작후 설치한 우분투를 다시 실행하면 설치를 하게되고, 패스워드를 입력해주어야한다.
 
-![images/34.png](images/34.png)
+![/images/2020/0622/34.png](/images/2020/0622/34.png)
 
 wsl 설치관련해서는 아래 링크를 참고하도록하자
 

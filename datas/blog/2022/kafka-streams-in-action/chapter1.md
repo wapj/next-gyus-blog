@@ -3,7 +3,7 @@ title: "1장 카프카 스트림즈에 오신 것을 환영합니다."
 date: "2022-05-02"
 tags: ["kafka", "kafka streams"]
 category: dev
-featured: "images/kafkastreams.jpeg"
+featured: "/images/2022/0502/kafkastreams.jpeg"
 draft: false
 ---
 
@@ -63,7 +63,7 @@ draft: false
 - 판매 데이터 : 할인가 및 특가제공
 - 구매 데이터는 이력 및 분석을 위해 스토리지 저장
 
-![1](../images/0502/ksia01.png)
+![1](/images/2022/0502/ksia01.png)
 
 ## 구매 트랜잭션에 대한 관점 변경
 - 구매 : 원본 소스

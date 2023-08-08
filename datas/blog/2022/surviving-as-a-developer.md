@@ -3,7 +3,7 @@ title: "[책읽기] 개발자로 살아남기"
 date: "2022-02-04"
 tags: ["BOOKS", "developer"]
 category: dev
-featured: "images/survive.jpg"
+featured: "/images/2022/survive.jpg"
 draft: false
 ---
 

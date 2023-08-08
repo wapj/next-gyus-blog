@@ -4,7 +4,7 @@ date: "2020-05-24"
 tags: ["ansible", "infra"]
 category: dev
 draft: false
-featured: images/featured.jpg
+featured: images/2020/ansible-up-and-running.jpg
 ---
 
 간밤에 잠이 안와서 읽기 시작했는데, 내용이 굉장히 알찬 책이었다.
