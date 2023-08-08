@@ -3,7 +3,7 @@ title: "소망이가 태어난 날"
 date: "2021-02-17"
 category: "diary"
 published: true
-featured: images/jua01.jpg
+featured: /images/2021/jua01.jpg
 ---
 
 > 나는 내가 태어난 날의 이야기를 잘 알지 못하는데, 아이가 태어난 날의 아빠의 일기를 적어보았다.

@@ -3,7 +3,7 @@ title: "실전 육아 101"
 date: "2021-03-14"
 category: "diary"
 published: true
-featured: images/real_parenting101.jpg
+featured: /images/2021/real_parenting101.jpg
 ---
 
 > 인생은 실전이다.

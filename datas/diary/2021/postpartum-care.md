@@ -3,7 +3,7 @@ title: "산후 조리원 체험기"
 date: "2021-03-08"
 category: "diary"
 published: true
-featured: images/postpartum-care.jpg
+featured: /images/2021/postpartum-care.jpg
 ---
 
 ## 자본주의를 알게 해준 산후조리원
@@ -27,4 +27,4 @@ featured: images/postpartum-care.jpg
 
 마지막으로 우리 아가 사진을 투척~! 오늘도 좋은 하루 되시길~
 
-![images/postpartum-care.jpg](images/postpartum-care.jpg)
+![images/postpartum-care.jpg](/images/2021/postpartum-care.jpg)
