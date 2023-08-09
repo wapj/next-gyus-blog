@@ -3,8 +3,6 @@ import Article from "@/components/Article";
 import Comment from "@/components/Comment";
 import siteMetadata from "@/datas/siteMetadata";
 
-
-
 export const generateMetadata = ({ params }: { params: { slug: string[] } }) => {
   const slug = "blog/" + decodeURI(params.slug.join('/'))
   const post = allPosts.find((post) => post._raw.flattenedPath === slug)
