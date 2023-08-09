@@ -3,7 +3,7 @@ title: "개발 잡담 - 문자열은 왜 스트링이라고 부를까?"
 date: "2020-08-03"
 tags: ["python", "gossip"]
 category: "dev"
-draft: false
+published: true
 ---
 
 ## 스트링은 왜 문자열 일까?

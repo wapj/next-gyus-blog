@@ -4,7 +4,7 @@ date: "2022-02-04"
 tags: ["BOOKS", "developer"]
 category: dev
 featured: "/images/2022/survive.jpg"
-draft: false
+published: true
 ---
 
 > 이 책의 목표는 독자 여러분이 30년 동안 개발자로 잘 먹고 잘 살 수 있게 하는데 있습니다. (224페이지)

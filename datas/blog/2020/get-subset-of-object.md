@@ -4,7 +4,7 @@ date: "2020-07-17"
 tags: ["TIL", "javascript", "destructuring"]
 category: dev
 featured: /images/2020/get-subset-of-object.png
-draft: false
+published: true
 ---
 
 자바스크립트에서 복잡한 객체의 데이터의 일부만 다른 객체로 할당하고 싶다는 요구사항이 있었다.

@@ -4,7 +4,7 @@ date: "2022-02-20"
 tags: ["iterm2", "spring", "java"]
 category: dev
 featured: "/images/2022/0220/0706.jpg"
-draft: false
+published: true
 ---
 
 ## 개요

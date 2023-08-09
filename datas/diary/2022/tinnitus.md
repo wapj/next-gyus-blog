@@ -3,7 +3,7 @@ title: "이명이 생기다"
 date: "2022-02-28"
 tags: ["life", "tinnitus"]
 category: diary
-draft: false
+published: true
 ---
 
 ## 굉장히 아팠던 1월말과 2월초

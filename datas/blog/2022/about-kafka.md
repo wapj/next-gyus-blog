@@ -4,7 +4,7 @@ date: "2022-05-23"
 tags: ["kafka"]
 category: dev
 featured: "/images/2022/0523/kafka1.png"
-draft: false
+published: true
 ---
 
 

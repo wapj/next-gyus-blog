@@ -4,7 +4,7 @@ date: "2022-05-09"
 tags: ["NestJS"]
 category: dev
 featured: "/images/2022/0509/nestjs_cat.png"
-draft: false
+published: true
 ---
 
 

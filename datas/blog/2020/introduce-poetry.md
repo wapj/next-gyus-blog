@@ -3,7 +3,7 @@ title: "파이썬 패키지 관리툴 poetry 소개"
 date: "2020-06-04"
 tags: ["python", "poetry"]
 category: "dev"
-draft: false
+published: true
 ---
 
 ## poetry 소개

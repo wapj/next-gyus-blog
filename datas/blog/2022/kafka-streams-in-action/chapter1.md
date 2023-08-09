@@ -4,7 +4,7 @@ date: "2022-05-02"
 tags: ["kafka", "kafka streams"]
 category: dev
 featured: "/images/2022/0502/kafkastreams.jpeg"
-draft: false
+published: true
 ---
 
 ## 간단하게 살펴보는 빅 데이터 처리의 역사

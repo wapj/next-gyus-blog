@@ -2,7 +2,7 @@
 title: "gatsby helmet 사용하기"
 date: "2019-05-18"
 category: "dev"
-draft: false
+published: true
 ---
 
 ### 설치

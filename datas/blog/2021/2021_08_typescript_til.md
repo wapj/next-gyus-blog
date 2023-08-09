@@ -4,7 +4,7 @@ date: "2021-08-17"
 tags: ["TIL", "react", "typescript"]
 category: dev
 featured: "/images/2021/til.png"
-draft: false
+published: true
 ---
 
 > 이 글을 쓰게 된 계기는 내가 typescript 에서 enum 때문에 고생을 했기 때문이다.

@@ -3,7 +3,7 @@ title: "MIL 10월에 공부한 것들"
 date: "2019-10-01"
 tags: ["TIL"]
 category: "dev"
-draft: false
+published: true
 ---
 
 ## react

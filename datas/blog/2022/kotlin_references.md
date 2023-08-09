@@ -4,7 +4,7 @@ date: 2022-06-04
 tags: ["kotlin"]
 category: dev
 featured: "/images/2022/kotlin.png"
-draft: false
+published: true
 ---
 
 회사에서 코틀린으로 새로 프로젝트를 하게 되어서 보고 있는 자료들입니다.

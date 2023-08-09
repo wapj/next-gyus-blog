@@ -2,7 +2,7 @@
 title: "개츠비에 구글 아날리틱스 달기"
 date: "2019-05-18"
 category: "dev"
-draft: false
+published: true
 ---
 
 ### 설치

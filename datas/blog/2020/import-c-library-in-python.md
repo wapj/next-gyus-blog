@@ -4,7 +4,7 @@ date: "2020-12-20"
 tags: ["python", "django", "mysql"]
 category: dev
 featured: "images/20201220.jpg"
-draft: false
+published: true
 ---
 
 ## `_mysql` 이 없다는 에러 발생

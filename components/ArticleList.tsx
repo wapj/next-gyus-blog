@@ -22,7 +22,7 @@ export default function ArticleList({posts, type = "blog"}: {posts:any[], type?:
               )}
               <br />
               {tags && tags.map((tag: string) => (
-                <Tag tag={tag}/>
+                <Tag text={tag}/>
               ))}
             </div>
           </article>

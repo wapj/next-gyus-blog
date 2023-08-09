@@ -4,7 +4,7 @@ date: "2020-09-20"
 tags: ["python", "fibonacci"]
 category: "dev"
 featured: fibonacci.jpg
-draft: false
+published: true
 ---
 
 피보나치 수열은 다들 들어보셨을 겁니다.

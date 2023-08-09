@@ -34,7 +34,7 @@ const PostLayout = ({ params }: { params: { slug: string[] } }) => {
   const slug = "blog/" + decodeURI(params.slug.join('/'))
   console.log(">>>>>>>>");
   console.log(slug);
-  const post = allPosts.find((post) => {console.log(">>> : ", post._raw.flattenedPath, slug); return post._raw.flattenedPath === slug})
+  const post = allPosts.find((post) => post._raw.flattenedPath === slug)
   if (!post) throw new Error(`Post not found for slug: ${slug}`)
 
   return (

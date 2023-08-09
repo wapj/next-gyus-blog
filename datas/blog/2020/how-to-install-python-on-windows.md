@@ -4,7 +4,7 @@ date: "2020-06-22"
 tags: ["python", "python install", "windows"]
 category: dev
 featured: /images/2020/0622/featured.jpg
-draft: false
+published: true
 ---
 
 ## 첫번째 [python.org](http://python.org) 에서 다운받아서 설치

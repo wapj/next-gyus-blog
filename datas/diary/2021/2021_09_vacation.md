@@ -4,7 +4,7 @@ date: "2021-09-12"
 tags: ["vacations"]
 category: diary
 featured: "/images/2021/20210912.jpg"
-draft: false
+published: true
 ---
 
 ## 내 돈 주고 간 첫 호캉스

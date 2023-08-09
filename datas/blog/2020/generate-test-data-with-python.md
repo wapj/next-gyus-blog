@@ -4,7 +4,7 @@ date: "2020-11-22"
 tags: ["python", "data", "generate"]
 category: dev
 featured: "images/generate-sample-data-with-python.jpg"
-draft: false
+published: true
 ---
 
 프로그램을 작성하다보면 테스트 데이터가 필요한 경우가 많이 있습니다. 특히나 다른팀과 협업을 해야하는데, 같은 테이블을 사용하는 경우에는 테이블에 뭐라도 들어가 있어야 테스트를 해볼 수가 있는데, 제가 데이터를 만들어 주는 것을 기다리는 팀이 있는 상황에는 일단 수동으로 넣고 테스트 해보시라고 말씀을 드리곤 합니다.

@@ -2,7 +2,7 @@
 title: "데이터 중심 어플리케이션 - 9장 일관성과 합의"
 date: "2019-09-09"
 category: "dev"
-draft: false
+published: true
 ---
 
 ## 일관성과 합의

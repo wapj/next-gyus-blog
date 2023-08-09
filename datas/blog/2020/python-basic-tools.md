@@ -4,7 +4,7 @@ date: "2020-11-01"
 tags: ["python", "tools", "utils"]
 category: dev
 featured: "images/basic-tools.jpg"
-draft: false
+published: true
 ---
 
 게임을 새로 시작하게 되면 주인공에게 기본 도구 몇 가지를 쥐어주고 시작하게 됩니다.

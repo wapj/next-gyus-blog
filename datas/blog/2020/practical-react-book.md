@@ -4,7 +4,7 @@ date: "2020-07-06"
 tags: ["react", "javascript"]
 category: "dev"
 featured: /images/2020/0706.jpg
-draft: false
+published: true
 ---
 
 프로젝트에서 리액트를 도입하려고 조사중이라 회사 동료가 집필한 [실전 리액트 프로그래밍](http://www.yes24.com/Product/Goods/74223605) 을 읽어보았다. 한 줄평은 아래와 같다.

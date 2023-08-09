@@ -3,7 +3,7 @@ title: "jupyter notebook 에서 pdf 만들기"
 date: "2020-05-13"
 tags: ["jupyter notebook"]
 category: "dev"
-draft: false
+published: true
 ---
 
 ## 주피터를 저작도구로 사용하기 시작했다

@@ -4,7 +4,7 @@ date: "2020-05-19"
 tags: ["shell", "blog"]
 category: dev
 featured: /images/2020/blog-update.jpg
-draft: false
+published: true
 ---
 
 # 블로그를 업데이트하였다

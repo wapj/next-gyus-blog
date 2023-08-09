@@ -4,7 +4,7 @@ date: "2022-01-25"
 tags: ["TIL", "java"]
 category: dev
 featured: "/images/2022/java17.webp"
-draft: false
+published: true
 ---
 
 ## 자바17은 왜이리 인기가 없나

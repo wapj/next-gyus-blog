@@ -4,7 +4,7 @@ date: "2021-09-15"
 tags: ["kakaopage", "admintool"]
 category: dev
 featured: "/images/2021/20210915_1.jpg"
-draft: false
+published: true
 ---
 
 

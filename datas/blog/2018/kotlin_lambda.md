@@ -3,7 +3,7 @@ title: "kotlin 람다 써보기"
 date: "2018-06-22"
 tags: ["kotlin"]
 category: "dev"
-draft: false
+published: true
 ---
 
 ## 람다 써보기

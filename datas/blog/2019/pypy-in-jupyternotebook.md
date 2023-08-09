@@ -3,7 +3,7 @@ title: "jupyter notebook에서 pypy사용하기"
 date: "2019-06-01"
 tags: ["python", "pypy", "jupyter notebook"]
 category: "dev"
-draft: false
+published: true
 ---
 
 ### 시작하기 전에

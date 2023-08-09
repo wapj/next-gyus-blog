@@ -3,7 +3,7 @@ title: 앤서블 시작과 실행을 읽은 후기
 date: "2020-05-24"
 tags: ["ansible", "infra"]
 category: dev
-draft: false
+published: true
 featured: images/2020/ansible-up-and-running.jpg
 ---
 

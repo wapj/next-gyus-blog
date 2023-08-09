@@ -3,7 +3,7 @@ title: "웹팩에 대하여 알아보자1 : hello webpack"
 date: "2020-08-12"
 tags: ["webpack"]
 category: dev
-draft: false
+published: true
 ---
 
 ## [웹팩](https://webpack.js.org/)이 뭘까?
