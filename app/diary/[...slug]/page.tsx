@@ -39,7 +39,9 @@ const PostLayout = ({ params }: { params: { slug: string[] } }) => {
 
   return (
     <>
-      <Article post={diary} />
+      <main className={"max-w-screen-md px-4 py-3 mx-auto"}>
+        <Article post={diary} />
+      </main>
     </>
   )
 }
